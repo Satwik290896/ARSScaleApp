@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-3</div>
+        <div class="no-gutters"></div>
+        <div>Which US state index do you consider apprpriate, when you consider chosing your home place after grauduation</div>
+        <INPUT TYPE="Radio" Name="Q3" Value="A1">  It forces the writer to be creative when the sentence appears. There are a number of different ways a writer can use the random sentence for creativity.
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q3" Value="Pos1">Job oppurutnities is the highest priority
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q3" Value="A2"> It can also be a fun way to surprise others. You might choose to share a random sentence on social media just to see what type of reaction it garners from others.
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q3" Value="Pos2"> Do we even have a choice?
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q3" Value="Pos3"> I don't really have an index to chose from. I normally chose standards of good living
+              <div></div>
+                  <INPUT TYPE="Radio" Name="Q3" Value="A3"> These are just a few ways that one might use.
+                    <div></div>
+              <div class="no-gutters"></div>
+        <button id="next3">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

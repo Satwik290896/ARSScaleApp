@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-9</div>
+        <div class="no-gutters"></div>
+        <div>Question arises about future when we speak about Artifical Intelligence. Do you think the consequences are negative?</div>
+        <INPUT TYPE="Radio" Name="Q9" Value="Male">AI is nothing but a harmful toy to play with. We are risking our lives and livelihoods.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q9" Value="A1">No problem.
+            Look at that pumpkin.
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q9" Value="Female">Belief in AI is growing and this will only grow in a positive way. As humans became aware of negative consequences and thus, governments will make sure these wont happen.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q9" Value="A3">I'd like to check your blood pressure.
+              You would somehow manage to make yourself understood.
+              It only took a single blow from the axe to knock the tree down.
+              <div></div>
+            <INPUT TYPE="Radio" Name="Q9" Value="Female">AI surely provide new job oppurtinities, but I am concerned about our future, because of war situations that may pop up every now and then. During war, humans can make a enemy AI wihch may possily destroy humanity.
+              <div></div>
+                <INPUT TYPE="Radio" Name="Q9" Value="A2">What a big dog.
+                  Let's go to the mall today.
+                  <div></div>
+        <div class="no-gutters"></div>
+        <button id="next9">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-5</div>
+        <div class="no-gutters"></div>
+        <div>Do you belive humans can invent a Time Machine in the coming days?</div>
+        <INPUT TYPE="Radio" Name="Q5" Value="Male">Time Machines are just an imagination and they can ba ain interesting plot in movies, but cannot be achieved in the real life.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q5" Value="A1">Last night there was a big fire in the neighbourhood.
+            The church was white and brown and looked very old.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q5" Value="A2">I wished that father could be here to see this.
+              She liked to wear yellow lipstick and green eyeshadow.
+              <div></div>
+          <INPUT TYPE="Radio" Name="Q5" Value="Female">Often-times, I try to believe it, but my mind immediately says - they just are dream machines.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q5" Value="Male">They are totally possible and I am looking forward for that to happen.
+              <div></div>
+            <INPUT TYPE="Radio" Name="Q5" Value="A3">People living in a big city tend to lack exercise.
+              In Australia, there is a store called PieFace which sells meat pies with smiley faces on them.
+              <div></div>
+        <div class="no-gutters"></div>
+        <button id="next5">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

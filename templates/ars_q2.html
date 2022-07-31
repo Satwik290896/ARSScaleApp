@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-2</div>
+        <div class="no-gutters"></div>
+        <div>What you plan after graduation and are you hopeful?</div>
+        <INPUT TYPE="Radio" Name="Q2" Value="Male">I am in-content with my life and I am axtremely hopeful after my graduation 
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q2" Value="A1">Raipoture has givena trmendous excitement these days. NEWS has been prevelant elsewhere with mainstream media in it.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q2" Value="A2">Sometimes a random word just isn't enough, and that is where the random sentence generator comes into play.
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q2" Value="Female">I am skeptical. I doubt whether I can achieve my dream life.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q2" Value="Female">I plan to achieve doctrate and I will surely plan for it in the near future.
+              <div></div>
+
+                  <INPUT TYPE="Radio" Name="Q2" Value="A3"> Producing random sentences can be helpful in a number of different ways.
+                    <div></div>
+        <div class="no-gutters"></div>
+        <button id="next2">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

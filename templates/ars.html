@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+
+  <script>
+        let Idatatotal = {{data|tojson}} 
+        let Idata = Idatatotal["tosenddata"]
+  </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-1</div>
+        <div class="no-gutters"></div>
+        <div>Do you think AR/VR is the future? What made you think?</div>
+        <INPUT TYPE="Radio" Name="Q1" Value="A1"> Ask the 8-Ball Oracle and Fortune Teller to make a decision. No magic, just a random answer generator. Calculate it incase of anyoutstanding danger to it. This has been an issue for us in the long decade.
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q1" Value="Negative">It does sound interesting and Exciting. But, the product might not have a relevance in the future
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q1" Value="A2"> The scenario was something like this, I called her but didn’t pick the call
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q1" Value="Positive">It sounds like a good product. Considering the heavy investment by the research oriented MANGA companies, headsets might possibly be our near future. 
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q1" Value="Positive2"> They have solid oppurtunities in the industry and US government will make sure the survival of AR/VR for its own growth in the world. It surely has a good future.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q1" Value="A3"> I did a little internet searching of some lists of random questions and used several lists I found to compile.
+            <div></div>
+            <div class="no-gutters"></div>
+        <button id="next">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

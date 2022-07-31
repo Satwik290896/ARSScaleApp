@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-6</div>
+        <div class="no-gutters"></div>
+        <div>What do you want to achieve in 5 years down the line</div>
+        <INPUT TYPE="Radio" Name="Q6" Value="A1">My show is going to come back soon.
+          Tom has a tiny apartment.
+          We go to the gym club together.
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q6" Value="Male">I want to be one of the greats and have a wiki page on my name
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q6" Value="A3">You would somehow manage to make yourself understood.
+            I am the biggest Ariana Grande fan on the planet.
+          <INPUT TYPE="Radio" Name="Q6" Value="Female">I want to become financially independent and do what I truly believe in.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q6" Value="Female">I just want to stay lazy in my cozy room and watch the world fight for domination.
+              <div></div>
+                <INPUT TYPE="Radio" Name="Q6" Value="A2">He is younger than I am.
+                  This tree is bigger than all the others.
+                  Please just give me one more!
+                  <div></div>
+        <div class="no-gutters"></div>
+        <button id="next6">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

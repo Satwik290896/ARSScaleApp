@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-8</div>
+        <div class="no-gutters"></div>
+        <div>Do you believe in religion and what kind of belief do you have?</div>
+        <INPUT TYPE="Radio" Name="Q8" Value="A1">I could help you make a list of things we need to buy.
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q8" Value="Male">I am religious and believe in sermons in temples.
+          <div></div>
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q8" Value="A2">Who's calling on the phone this late at night
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q8" Value="Female">I believe in my parent's religion and never cared to give it a second thought.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q8" Value="Female">There is no God. God exists only in mythology and stories.
+              <div></div>    
+              <INPUT TYPE="Radio" Name="Q8" Value="A3">Do you think our lives will ever go back to normal.
+                    Why not go back to them and tell them you changed your mind.
+                    <div></div>
+        <div class="no-gutters"></div>
+        <button id="next8">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

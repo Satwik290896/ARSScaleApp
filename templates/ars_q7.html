@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-7</div>
+        <div class="no-gutters"></div>
+        <div>What color you like and what attracts you most when you are shopping?</div>
+        <INPUT TYPE="Radio" Name="Q7" Value="A2">You're not looking at the big picture.
+          <div></div>
+        <INPUT TYPE="Radio" Name="Q7" Value="Male">I prefer to checkout suitable colors for the products that I am shopping for.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q7" Value="A1">None of the options are good.
+            This isn't a book, it's a case to hide illicit substances.
+            <div></div>
+          <INPUT TYPE="Radio" Name="Q7" Value="Female">I only care about my favaorite color
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q7" Value="Female">I dont shop more than 5 minutes and always prefer to spend the least, even when I need to chose between colors.
+              <div></div>
+                  <INPUT TYPE="Radio" Name="Q7" Value="A3">I know that there was a big church here.
+                    If you go there, you will find him.
+                    What's the weather like today?
+                    <div></div>
+              <div class="no-gutters"></div>
+        <button id="next7">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

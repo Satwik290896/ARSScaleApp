@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-4</div>
+        <div class="no-gutters"></div>
+        <div>Do you believe that the technology will take Humanity to a newer conscience?</div>
+        <INPUT TYPE="Radio" Name="Q4" Value="Male">Whole-heartedly and with a passionate energy, I totally agree with the statement.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q4" Value="A1">The hardest part about being a reporter is getting in contact with people to interview. She mixed up the recipes and accidentally made a beef parfait. Do you consider yourself a liberal or a conservative?
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q4" Value="A2">She had a water bottle with  a built-in water filter.
+            The grocery store wrote the weekly sales on poster board and taped them up in their windows.
+            Let's all just take a moment to breathe, please!
+              <div></div>
+          <INPUT TYPE="Radio" Name="Q4" Value="Male">Technology will only enable Humanity to be cruel. Look at how Russia invaded Ukraine.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q4" Value="Male">I dont know about conscience, but definitely Technology gave a chance for humanity to increase their living standards.
+              <div></div>
+                  <INPUT TYPE="Radio" Name="Q4" Value="A3">This recipe has been in my family for 100 years.
+                    The Ariake Sea is one of the biggest tidelands in Japan.
+                    Why do you keep asking such obvious questions?
+                    <div></div>
+        <div class="no-gutters"></div>
+        <button id="next4">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>

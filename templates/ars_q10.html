@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Response Scale</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- bootstrap same as before -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="ars.css">
+
+  <script src="ars.js"></script>-->
+  <link rel="stylesheet" href="{{url_for('static', filename='ars.css')}}">
+  <script type="text/javascript" src="{{ url_for('static', filename = 'ars.js') }}"></script>
+  <script>
+    let Idatatotal = {{data|tojson}} 
+    let Idata = Idatatotal["tosenddata"]
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">ARS calculator</div>
+        <div>Question-10</div>
+        <div class="no-gutters"></div>
+        <div>Do you plan to complete any art courses during your lifetime. Are you artistic?</div>
+        <INPUT TYPE="Radio" Name="Q10" Value="Male">I value art, but I doubt if I will do any such course in my life, as I am not inclined in those studies.
+          <div></div>
+          <INPUT TYPE="Radio" Name="Q10" Value="A1">I'd like to check your blood pressure.
+            You would somehow manage to make yourself understood.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q10" Value="A2">It only took a single blow from the axe to knock the tree down.
+              <div></div>
+          <INPUT TYPE="Radio" Name="Q10" Value="Female">Art? Is it really a good career to consider. Most of the artists are homeless and liberal system has failed them.
+            <div></div>
+            <INPUT TYPE="Radio" Name="Q10" Value="Female">I surely like to do a course in art and I respect and value art and I am artistic.
+              <div></div>
+                  <INPUT TYPE="Radio" Name="Q10" Value="A3">I like veggies too.
+                    They'll show you the way home when you’re drunk.
+                    I need to make a burger.
+                    <div></div>
+              <div class="no-gutters"></div>
+        <button id="Submit">Next</button>
+        <!--<div class="row">
+            <div class="col-md-2">
+              <div>Log your paper sales:</div>
+            </div>
+            <div class="col-md-5">
+              <input type="text" id="Enter_Client">
+              <div class="Warning_client"></div>
+            </div>    
+            <div class="col-md-2">
+              <input type="text" id="Reams">
+              <div class="Warning_reams"></div>
+            </div> 
+            <div class="col-md-1">
+              <button id="Submit">Submit</button>   
+            </div> 
+            <div class="col-md-2">
+            </div>  
+        </div>
+        <div class="no-gutters2"></div>
+        <div class="Updates"></div>
+        <div class="no-gutters3" id="implement"></div>-->
+    </div>
+</body>
+</html>
